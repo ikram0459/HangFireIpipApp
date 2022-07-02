@@ -1,0 +1,9 @@
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\bin\Debug\netcoreapp3.1\PersonalService.deps.json
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\bin\Debug\netcoreapp3.1\PersonalService.dll
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\bin\Debug\netcoreapp3.1\PersonalService.pdb
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\obj\Debug\netcoreapp3.1\PersonalService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\obj\Debug\netcoreapp3.1\PersonalService.AssemblyInfoInputs.cache
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\obj\Debug\netcoreapp3.1\PersonalService.AssemblyInfo.cs
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\obj\Debug\netcoreapp3.1\PersonalService.csproj.CoreCompileInputs.cache
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\obj\Debug\netcoreapp3.1\PersonalService.dll
+C:\Esw-Development\INapps\ipipHangfireApp\PersonalService\obj\Debug\netcoreapp3.1\PersonalService.pdb
