@@ -7,5 +7,6 @@ namespace PersonalService
     public interface IMyPersonalService
     {
         void RunMyTask();
+        void RunMyTask2();
     }
 }

@@ -17,11 +17,23 @@ namespace HangFireIpipApp.Controllers
         }
 
         [Route("Api/HangFire")]
+        [HttpGet]
         public IActionResult Index()
         {
             //_myPersonalService.RunMyTask();
 
             RecurringJob.AddOrUpdate("IpipTestJob1", () => this._myPersonalService.RunMyTask(), Cron.Minutely);
+
+            return Ok();
+        }
+
+        [Route("Api/HangFire2")]
+        [HttpGet]
+        public IActionResult HangFire2()
+        {
+            //_myPersonalService.RunMyTask();
+
+            RecurringJob.AddOrUpdate("IpipTestJob2", () => this._myPersonalService.RunMyTask2(), Cron.Minutely);
 
             return Ok();
         }

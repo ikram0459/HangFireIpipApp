@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Hangfire;
+using Microsoft.OpenApi.Models;
 using PersonalService;
 
 namespace HangFireIpipApp
@@ -31,6 +32,13 @@ namespace HangFireIpipApp
             services.AddHangfireServer();
 
             services.AddScoped<IMyPersonalService, MyPersonalService>();
+
+            services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,10 +63,16 @@ namespace HangFireIpipApp
             app.UseAuthorization();
             
             app.UseHangfireDashboard();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers(); //MapRazorPages();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V2");
             });
         }
     }
